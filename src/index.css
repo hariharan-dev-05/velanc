@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --body-color: #dddddd;
+  --primary-color: #8750f7;
+  --secondary-color: #2a1454;
+  --white-color: #ffffff;
+  --off-white-color: #f6f3fc;
+  --black-color: #050709;
+  --gray-color: #d9d9d9;
+  --gray-color2: #747779;
+  --gray-color3: #22272c;
+  --accent-color: #0f0715;
+  --cream-light-color: #f6f3fc;
+  --Sora: "Sora", sans-serif;
+}
+
+body {
+  font-family: var(--Sora);
+}
