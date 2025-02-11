@@ -7,6 +7,7 @@ import Experience from "./sections/Experience";
 import Testimonials from "./sections/Testimonials";
 import Blog from "./sections/Blog";
 import Contact from "./sections/Contact";
+import Companies from "./sections/companies";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,11 +19,12 @@ const App = () => {
       <Hero />
       <About />
       <Specializations />
-      <Projects />
       <Skills />
+      <Projects />
       <Experience />
-      <Testimonials />
       <Blog />
+      <Testimonials />
+      <Companies />
       <Contact />
       <Footer />
     </div>
