@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -13,9 +13,22 @@
   --gray-color3: #22272c;
   --accent-color: #0f0715;
   --cream-light-color: #f6f3fc;
-  --Sora: "Sora", sans-serif;
+  --serif: "Noto Serif", serif;
 }
 
 body {
-  font-family: var(--Sora);
+  font-family: var(--serif);
+}
+
+.app-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--accent-color);
+  color: var(--body-color);
 }
