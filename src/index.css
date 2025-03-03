@@ -1,34 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-:root {
-  --body-color: #dddddd;
-  --primary-color: #8750f7;
-  --secondary-color: #2a1454;
-  --white-color: #ffffff;
-  --off-white-color: #f6f3fc;
-  --black-color: #050709;
-  --gray-color: #d9d9d9;
-  --gray-color2: #747779;
-  --gray-color3: #22272c;
-  --accent-color: #0f0715;
-  --cream-light-color: #f6f3fc;
-  --serif: "Noto Serif", serif;
+@theme {
+  --breakpoint-tab: 990px;
+  --color-body: #dddddd;
+  --color-primary: #8750f7;
+  --color-secondary: #2a1454;
+  --color-white: #ffffff;
+  --color-black: #050709;
+  --color-gray: #d9d9d9;
+  --color-gray2: #747779;
+  --color-gray3: #22272c;
+  --color-accent: #0f0715;
+  --color-cream-light: #f6f3fc;
+  --font-serif: "Noto Serif", serif;
 }
 
 body {
-  font-family: var(--serif);
+  @apply *:font-serif bg-accent text-cream-light;
 }
 
-.app-container {
-  width: 90%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+.bg-gradient {
+  @apply bg-linear-60 from-primary to-primary/40 hover:bg-linear-60 hover:from-primary/40 hover:to-primary transition-colors duration-200;
+}
+.text-gradient {
+  @apply bg-gradient-to-r from-primary to-white/65 text-transparent bg-clip-text inline-block;
 }
 
-body {
-  background-color: var(--accent-color);
-  color: var(--body-color);
+.container {
+  @apply mx-auto max-w-[1380px];
+}
+
+.icon-after {
+  @apply relative;
+}
+
+.icon-after::after {
+  @apply content-[""] absolute top-0 right-0 rounded-full bg-primary size-full scale-0 -z-10 transition-all duration-300;
+}
+
+.icon-after:hover::after {
+  @apply scale-100;
 }

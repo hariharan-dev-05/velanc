@@ -11,23 +11,26 @@ import Contact from "./sections/Contact";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import React from "react";
 
 const App = () => {
   return (
-    <div className="app-container">
+    <React.Fragment>
       <Navbar />
-      <Hero />
-      <About />
-      <Specializations />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Blog />
-      <Testimonials />
-      <Companies />
-      <Contact />
-      <Footer />
-    </div>
+      <div className="pt-24">
+        <Hero />
+        <About />
+        <Specializations />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Blog />
+        <Testimonials />
+        <Companies />
+        <Contact />
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 };
 
